@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="2" failures="0" name="Inicio de sesión exitoso" skipped="1" tests="3" time="1.0" timestamp="2025-11-25 11:07:58"><testcase name="Usuario inicia sesión con credenciales válidas"><error message="The actor usuario does not have the ability to browse the web" type="net.serenitybdd.screenplay.exceptions.ActorCannotBrowseTheWebException">The actor usuario does not have the ability to browse the web</error><system-err>The actor usuario does not have the ability to browse the web&#13;
+co.edu.udea.vivemedellin.screen.tasks.Abrir.performAs(Abrir.java:12)&#13;
+co.edu.udea.vivemedellin.screen.stepdefinitions.StepDefinition.abrirViveMedellin(StepDefinition.java:22)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase><testcase name="Usuario intenta iniciar sesión con credenciales inválidas"><error message="The actor usuario does not have the ability to browse the web" type="net.serenitybdd.screenplay.exceptions.ActorCannotBrowseTheWebException">The actor usuario does not have the ability to browse the web</error><system-err>The actor usuario does not have the ability to browse the web&#13;
+co.edu.udea.vivemedellin.screen.tasks.Abrir.performAs(Abrir.java:12)&#13;
+co.edu.udea.vivemedellin.screen.stepdefinitions.StepDefinition.abrirViveMedellin(StepDefinition.java:22)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase><testcase name="Usuario accede con sesión activa sin volver a iniciar sesión"><skipped/></testcase></testsuite>

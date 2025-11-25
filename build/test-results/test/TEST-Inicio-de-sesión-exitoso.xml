@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Inicio de sesión exitoso" tests="3" skipped="0" failures="3" errors="0" timestamp="2025-11-25T17:10:19.169Z" hostname="DESKTOP-TC2C6S1" time="8.162">
+  <properties/>
+  <testcase name="Usuario inicia sesión con credenciales válidas" classname="Inicio de sesión exitoso" time="6.228">
+    <failure message="io.cucumber.java.PendingException: TODO: implement me" type="io.cucumber.java.PendingException">io.cucumber.java.PendingException: TODO: implement me
+	at app//co.edu.udea.vivemedellin.screen.stepdefinitions.StepDefinition.intentaIniciarSesiónConElCorreoYLaContraseña(StepDefinition.java:34)
+	at ✽.intenta iniciar sesión con el correo &quot;&lt;correo&gt;&quot; y la contraseña &quot;&lt;contraseña&gt;&quot;(file:///C:/Users/PC2-%20Usuario/Desktop/UdeA/Code%20Factory/2025-2/ViveMedellin-Automatizacion/src/test/resources/features/iniciar_sesion_correctamente.feature:9)
+</failure>
+  </testcase>
+  <testcase name="Usuario intenta iniciar sesión con credenciales inválidas" classname="Inicio de sesión exitoso" time="1.812">
+    <failure message="io.cucumber.junit.UndefinedStepException: The step 'ingresa credenciales inválidas' and 3 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@When(&quot;ingresa credenciales inválidas&quot;)&#10;public void ingresaCredencialesInválidas() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;intenta iniciar sesión&quot;)&#10;public void intentaIniciarSesión() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;el sistema rechaza el intento de acceso&quot;)&#10;public void elSistemaRechazaElIntentoDeAcceso() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;muestra un mensaje de error {string}&quot;)&#10;public void muestraUnMensajeDeError(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'ingresa credenciales inválidas' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When(&quot;ingresa credenciales inválidas&quot;)
+public void ingresaCredencialesInválidas() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;intenta iniciar sesión&quot;)
+public void intentaIniciarSesión() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;el sistema rechaza el intento de acceso&quot;)
+public void elSistemaRechazaElIntentoDeAcceso() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;muestra un mensaje de error {string}&quot;)
+public void muestraUnMensajeDeError(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</failure>
+  </testcase>
+  <testcase name="Usuario accede con sesión activa sin volver a iniciar sesión" classname="Inicio de sesión exitoso" time="0.12">
+    <failure message="io.cucumber.junit.UndefinedStepException: The step 'que el usuario tiene una sesión activa en la plataforma' and 3 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;que el usuario tiene una sesión activa en la plataforma&quot;)&#10;public void queElUsuarioTieneUnaSesiónActivaEnLaPlataforma() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;accede nuevamente sin haber cerrado sesión&quot;)&#10;public void accedeNuevamenteSinHaberCerradoSesión() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;el sistema omite el inicio de sesión&quot;)&#10;public void elSistemaOmiteElInicioDeSesión() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;dirige al usuario directamente a la página principal&quot;)&#10;public void dirigeAlUsuarioDirectamenteALaPáginaPrincipal() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'que el usuario tiene una sesión activa en la plataforma' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;que el usuario tiene una sesión activa en la plataforma&quot;)
+public void queElUsuarioTieneUnaSesiónActivaEnLaPlataforma() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;accede nuevamente sin haber cerrado sesión&quot;)
+public void accedeNuevamenteSinHaberCerradoSesión() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;el sistema omite el inicio de sesión&quot;)
+public void elSistemaOmiteElInicioDeSesión() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;dirige al usuario directamente a la página principal&quot;)
+public void dirigeAlUsuarioDirectamenteALaPáginaPrincipal() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Usuario inicia sesión con credenciales válidas(inicio-de-sesión-exitoso;usuario-inicia-sesión-con-credenciales-válidas)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors, \n                   --disa..., --disable-default-apps, --disable-extensions-file-a..., \n                   --inco..., --disable-infobars,--disabl..., --remote-allow-origins=*], extensions: []}}
+nov. 25, 2025 12:10:22 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 142
+nov. 25, 2025 12:10:22 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 142.0.7444.176. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - ?[96m
+  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
+ |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
+   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
+   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+
+Usuario inicia sesión con credenciales válidas
+-----------------------------------------------------------------------------?[0m
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Usuario intenta iniciar sesión con credenciales inválidas(inicio-de-sesión-exitoso;usuario-intenta-iniciar-sesión-con-credenciales-inválidas)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - ?[96m
+  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
+ |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
+   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
+   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+
+Usuario intenta iniciar sesión con credenciales inválidas
+-----------------------------------------------------------------------------?[0m
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Usuario accede con sesión activa sin volver a iniciar sesión(inicio-de-sesión-exitoso;usuario-accede-con-sesión-activa-sin-volver-a-iniciar-sesión)
+--------------------------------------------------------------------------------
+[Test worker] INFO  - ?[96m
+  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
+ |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
+   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
+   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+
+Usuario accede con sesión activa sin volver a iniciar sesión
+-----------------------------------------------------------------------------?[0m
+]]></system-err>
+</testsuite>
