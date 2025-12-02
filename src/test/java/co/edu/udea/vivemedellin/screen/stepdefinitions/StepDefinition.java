@@ -40,9 +40,11 @@ public class StepDefinition {
 
     @Then("el acceso es concedido y es redirigido a la página principal")
     public void accesoConcedido() {
-    String obtenido = UsuarioAutenticado.value().answeredBy(usuario);
+//    String obtenido = UsuarioAutenticado.value().answeredBy(usuario);
+  //  System.out.println(obtenido);
+    System.out.println(UsuarioAutenticado.value().answeredBy(usuario));
     usuario.should(seeThat(UsuarioAutenticado.value(), equalTo("CC")));
-    System.out.println(obtenido);
+    
     //assertThat("CC").isEqualTo(UsuarioAutenticado.value());
 }
 

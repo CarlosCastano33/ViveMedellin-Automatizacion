@@ -27,7 +27,7 @@ public class AccederCon implements Interaction {
         actor.attemptsTo(Enter.theValue(contrasena).into(PASSWORD_INPUT));
         WaitTime.putWaitTimeOf(1000);
         actor.attemptsTo(Click.on(INICIAR_SESION_ENVIAR_BUTTON));
-        WaitTime.putWaitTimeOf(1000);
+        WaitTime.putWaitTimeOf(40000);
     }
 
     public static AccederCon credenciales(String correo, String contrasena){
