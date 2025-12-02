@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">8.160s</div>
+<div class="counter">14.036s</div>
 <p>duration</p>
 </div>
 </td>
@@ -108,9 +108,25 @@ public void dirigeAlUsuarioDirectamenteALaPáginaPrincipal() {
 <a name="Usuario inicia sesión con credenciales válidas"></a>
 <h3 class="failures">Usuario inicia sesión con credenciales válidas</h3>
 <span class="code">
-<pre id="test-message-Usuario inicia sesión con credenciales válidas">io.cucumber.java.PendingException: TODO: implement me
-	at app//co.edu.udea.vivemedellin.screen.stepdefinitions.StepDefinition.intentaIniciarSesiónConElCorreoYLaContraseña(StepDefinition.java:34)
-	at ✽.intenta iniciar sesión con el correo &quot;&lt;correo&gt;&quot; y la contraseña &quot;&lt;contraseña&gt;&quot;(file:///C:/Users/PC2-%20Usuario/Desktop/UdeA/Code%20Factory/2025-2/ViveMedellin-Automatizacion/src/test/resources/features/iniciar_sesion_correctamente.feature:9)
+<pre id="test-message-Usuario inicia sesión con credenciales válidas">io.cucumber.junit.UndefinedStepException: The step 'el acceso es concedido' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Then(&quot;el acceso es concedido&quot;)
+public void elAccesoEsConcedido() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;es redirigido a la página principal&quot;)
+public void esRedirigidoALaPáginaPrincipal() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;la sesión permanece activa hasta que decida cerrarla&quot;)
+public void laSesiónPermaneceActivaHastaQueDecidaCerrarla() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
 </pre>
 <button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="test-message-Usuario inicia sesión con credenciales válidas">Copy</button>
 </span>
@@ -119,14 +135,9 @@ public void dirigeAlUsuarioDirectamenteALaPáginaPrincipal() {
 <a name="Usuario intenta iniciar sesión con credenciales inválidas"></a>
 <h3 class="failures">Usuario intenta iniciar sesión con credenciales inválidas</h3>
 <span class="code">
-<pre id="test-message-Usuario intenta iniciar sesión con credenciales inválidas">io.cucumber.junit.UndefinedStepException: The step 'ingresa credenciales inválidas' and 3 other step(s) are undefined.
+<pre id="test-message-Usuario intenta iniciar sesión con credenciales inválidas">io.cucumber.junit.UndefinedStepException: The step 'intenta iniciar sesión' and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
-@When(&quot;ingresa credenciales inválidas&quot;)
-public void ingresaCredencialesInválidas() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
 @When(&quot;intenta iniciar sesión&quot;)
 public void intentaIniciarSesión() {
     // Write code here that turns the phrase above into concrete actions
@@ -160,17 +171,17 @@ public void muestraUnMensajeDeError(String string) {
 </thead>
 <tr>
 <td class="failures">Usuario accede con sesión activa sin volver a iniciar sesión</td>
-<td class="failures">0.120s</td>
+<td class="failures">0.095s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">Usuario inicia sesión con credenciales válidas</td>
-<td class="failures">6.228s</td>
+<td class="failures">9.716s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">Usuario intenta iniciar sesión con credenciales inválidas</td>
-<td class="failures">1.812s</td>
+<td class="failures">4.225s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -188,9 +199,9 @@ Usuario inicia sesión con credenciales válidas(inicio-de-sesión-exitoso;usuar
 --------------------------------------------------------------------------------
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors, \n                   --disa..., --disable-default-apps, --disable-extensions-file-a..., \n                   --inco..., --disable-infobars,--disabl..., --remote-allow-origins=*], extensions: []}}
-nov. 25, 2025 12:10:22 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+nov. 25, 2025 1:35:51 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 142
-nov. 25, 2025 12:10:22 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+nov. 25, 2025 1:35:51 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 ADVERTENCIA: Unable to find version of CDP to use for 142.0.7444.176. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [Test worker] INFO  - ?[96m
   _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
@@ -244,7 +255,7 @@ Usuario accede con sesión activa sin volver a iniciar sesión
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.2.0</a> at 25/11/2025, 12:10:28 p. m.</p>
+<a href="https://www.gradle.org">Gradle 9.2.0</a> at 25/11/2025, 1:36:02 p. m.</p>
 </div>
 </div>
 </body>

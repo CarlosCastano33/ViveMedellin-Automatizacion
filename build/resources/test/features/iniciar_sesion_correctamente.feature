@@ -6,14 +6,14 @@
 
     Scenario: Usuario inicia sesión con credenciales válidas
       Given que el usuario está en la pantalla de inicio de sesión
-      When intenta iniciar sesión con el correo "<correo>" y la contraseña "<contraseña>"
+      When intenta iniciar sesión con credenciales válidas
       Then el acceso es concedido
       And es redirigido a la página principal
       And la sesión permanece activa hasta que decida cerrarla
 
     Scenario: Usuario intenta iniciar sesión con credenciales inválidas
       Given que el usuario está en la pantalla de inicio de sesión
-      When ingresa credenciales inválidas
+      When intenta iniciar sesión con credenciales inválidas
       And intenta iniciar sesión
       Then el sistema rechaza el intento de acceso
       And muestra un mensaje de error "Credenciales incorrectas"

@@ -23,15 +23,18 @@ public class StepDefinition {
     }
 
     @Given("que el usuario está en la pantalla de inicio de sesión")
-    public void abrirPantallaInicioDeSesion() {
+    public void abrirViveMedellin() {
         usuario.attemptsTo(Abrir.viveMedellin());
-        usuario.attemptsTo(Seleccionar.pantallaInicioDeSesion());
     }
 
-    @When("intenta iniciar sesión con el correo {string} y la contraseña {string}")
-    public void intentaIniciarSesiónConElCorreoYLaContraseña(String string, String string2) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @When("intenta iniciar sesión con credenciales válidas")
+    public void iniciarSesionConCredencialesValidas() {
+        usuario.attemptsTo(IniciarCon.credencialesValidas());
+    }
+
+    @When("intenta iniciar sesión con credenciales inválidas")
+    public void iniciarSesionConCredencialesInvalidas() {
+        usuario.attemptsTo(IniciarCon.credencialesInvalidas());
     }
 
 }

@@ -5,20 +5,30 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
 
-import static co.edu.udea.vivemedellin.screen.userinterfaces.Home.INICIAR_SESION_BUTTON;
+import static co.edu.udea.vivemedellin.screen.userinterfaces.Home.*;
 
-public class Clickear implements Interaction {
+public class AccederCon implements Interaction {
+
+    private final String correo;
+    private final String contrasena;
+
+    public AccederCon(String correo, String contrasena){
+        this.correo = correo;
+        this.contrasena = contrasena;
+    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         // TODO DEBE ABIR INICIO, LLENAR FORMULARIO Y DARLE ENTER
         actor.attemptsTo(Click.on(INICIAR_SESION_BUTTON));
-        actor.attemptsTo();
-        WaitTime.putWaitTimeOf(1000);
+        actor.attemptsTo(Enter.theValue(correo).into(EMAIL_INPUT));
+        actor.attemptsTo(Enter.theValue(contrasena).into(PASSWORD_INPUT));
+        WaitTime.putWaitTimeOf(3000);
     }
 
-    public static Clickear inicioDeSesion(String correo, String contrasena){
-        return Tasks.instrumented(Clickear.class, correo, contrasena);
+    public static AccederCon credenciales(String correo, String contrasena){
+        return Tasks.instrumented(AccederCon.class, correo, contrasena);
     }
 }
