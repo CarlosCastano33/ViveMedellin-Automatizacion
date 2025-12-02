@@ -13,7 +13,6 @@
     Scenario: Usuario intenta iniciar sesión con credenciales inválidas
       Given que el usuario está en la pantalla de inicio de sesión
       When intenta iniciar sesión con credenciales inválidas
-      And intenta iniciar sesión
       Then el sistema rechaza el intento de acceso
       And muestra un mensaje de error "Credenciales incorrectas"
 
