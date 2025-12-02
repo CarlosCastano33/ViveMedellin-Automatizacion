@@ -21,11 +21,13 @@ public class AccederCon implements Interaction {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        // TODO DEBE ABIR INICIO, LLENAR FORMULARIO Y DARLE ENTER
+        
         actor.attemptsTo(Click.on(INICIAR_SESION_BUTTON));
         actor.attemptsTo(Enter.theValue(correo).into(EMAIL_INPUT));
         actor.attemptsTo(Enter.theValue(contrasena).into(PASSWORD_INPUT));
-        WaitTime.putWaitTimeOf(3000);
+        WaitTime.putWaitTimeOf(1000);
+        actor.attemptsTo(Click.on(INICIAR_SESION_ENVIAR_BUTTON));
+        WaitTime.putWaitTimeOf(1000);
     }
 
     public static AccederCon credenciales(String correo, String contrasena){

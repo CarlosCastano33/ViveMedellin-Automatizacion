@@ -7,8 +7,7 @@
     Scenario: Usuario inicia sesión con credenciales válidas
       Given que el usuario está en la pantalla de inicio de sesión
       When intenta iniciar sesión con credenciales válidas
-      Then el acceso es concedido
-      And es redirigido a la página principal
+      Then el acceso es concedido y es redirigido a la página principal
       And la sesión permanece activa hasta que decida cerrarla
 
     Scenario: Usuario intenta iniciar sesión con credenciales inválidas

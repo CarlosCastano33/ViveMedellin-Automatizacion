@@ -13,5 +13,7 @@ public class Home {
             Target.the("Contraseña input").located(By.id("password"));
     public static final Target INICIAR_SESION_ENVIAR_BUTTON =
             Target.the("Iniciar sesión emergente").locatedBy("//*[@id=\"radix-:r3:\"]/form/div[3]/button[2]");
+    public static final Target USUARIO_AUTENTICADO =
+           Target.the("Usuario autenticado").located(By.xpath("//div[normalize-space()='CC']"));
 
 }
