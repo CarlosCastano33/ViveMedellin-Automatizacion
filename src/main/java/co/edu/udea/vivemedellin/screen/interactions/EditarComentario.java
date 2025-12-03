@@ -24,7 +24,6 @@ public class EditarComentario implements Interaction {
                 Enter.theValue(nuevoTexto).into(EDIT_TEXTAREA),
                 Click.on(SAVE_EDIT_BUTTON)
         );
-
         WaitTime.putWaitTimeOf(1500);
     }
 

@@ -4,10 +4,10 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import static co.edu.udea.vivemedellin.screen.userinterfaces.EventoPage.COMMENT_TEXTAREA;
 
-public class ComentarioRechazado implements Question<Boolean> {
+public class RespuestaRechazada implements Question<Boolean> {
 
-    public static ComentarioRechazado contiene(){
-        return new ComentarioRechazado();
+    public static RespuestaRechazada contiene(){
+        return new RespuestaRechazada();
     }
 
     @Override

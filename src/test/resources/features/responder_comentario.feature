@@ -12,7 +12,7 @@ Feature: Responder comentarios
         #Then la respuesta queda anidada al comentario original
         #And la respuesta se muestra inmediatamente en el hilo del comentario
 
-    #Scenario: Respuesta sin autentificación
+    Scenario: Respuesta sin autentificación
         Given que el usuario no está autenticado
         When intenta responder un comentario
         Then el sistema rechaza responder

@@ -12,8 +12,8 @@ Feature: Responder comentarios
         #Then la respuesta queda anidada al comentario original
         #And la respuesta se muestra inmediatamente en el hilo del comentario
 
-    #Scenario: Respuesta sin autentificación
-     #   Given que el usuario no está autenticado
-      #  When intenta responder un comentario
-       # Then se muestra un mensaje indicando que debe iniciar sesión
+    Scenario: Respuesta sin autentificación
+        Given que el usuario no está autenticado
+        When intenta responder un comentario
+        Then el sistema rechaza responder
         #And no se permite enviar la respuesta

@@ -1,5 +1,7 @@
 package co.edu.udea.vivemedellin.screen.stepdefinitions;
 
+import co.edu.udea.vivemedellin.screen.questions.ComentarioRechazado;
+import co.edu.udea.vivemedellin.screen.questions.RespuestaRechazada;
 import co.edu.udea.vivemedellin.screen.questions.UsuarioAutenticado;
 import co.edu.udea.vivemedellin.screen.questions.UsuarioNoAutenticado;
 import co.edu.udea.vivemedellin.screen.tasks.*;
@@ -76,8 +78,9 @@ public class StepDefinition {
         usuario.attemptsTo(Abrir.evento());
     }
 
-    @Then ("el sistema rechaza responder"){
-        usuario.should(seeThat(ComentarioRechazado.contiene(), equalTo(true)));
+    @Then ("el sistema rechaza responder")
+    public void rechazaRespuesta(){
+        usuario.should(seeThat(RespuestaRechazada.contiene(), equalTo(true)));
     }
     
 }

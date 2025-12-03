@@ -1,5 +1,4 @@
 package co.edu.udea.vivemedellin.screen.questions;
-
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import static co.edu.udea.vivemedellin.screen.userinterfaces.EventoPage.LISTA_COMENTARIOS;
