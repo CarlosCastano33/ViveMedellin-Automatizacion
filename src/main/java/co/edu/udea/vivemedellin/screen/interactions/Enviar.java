@@ -11,11 +11,11 @@ public class Enviar implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(REPLY_BUTTON));
-
+        
     }
     
-public static Enviar respuesta(){
-    return Tasks.instrumented(Enviar.class);
-}
+    public static Enviar respuesta(){
+        return Tasks.instrumented(Enviar.class);
+    }
 
 }

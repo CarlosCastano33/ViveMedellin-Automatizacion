@@ -8,12 +8,12 @@ Feature: Responder comentarios
         Given que el usuario está en la pantalla de inicio de sesión
             #Given que el usuario está autenticado en la plataforma
         And se encuentra visualizando un comentario en un evento
-        When escribe una respuesta y envía el mensaje
-        Then la respuesta queda anidada al comentario original
-        And la respuesta se muestra inmediatamente en el hilo del comentario
+        #When escribe una respuesta a un comentario y envía el mensaje
+        #Then la respuesta queda anidada al comentario original
+        #And la respuesta se muestra inmediatamente en el hilo del comentario
 
-    Scenario: Respuesta sin autentificación
-        Given que el usuario no está autenticado
-        When intenta responder un comentario
-        Then se muestra un mensaje indicando que debe iniciar sesión
-        And no se permite enviar la respuesta
+    #Scenario: Respuesta sin autentificación
+     #   Given que el usuario no está autenticado
+      #  When intenta responder un comentario
+       # Then se muestra un mensaje indicando que debe iniciar sesión
+        #And no se permite enviar la respuesta

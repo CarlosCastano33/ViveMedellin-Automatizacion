@@ -7,15 +7,14 @@ public class EventoPage {
 
     public static final Target COMMENT_TEXTAREA =
             Target.the("Área de texto para escribir comentario")
-                    .located(By.id("commentTextarea"));
+                    .locatedBy("//*[@id=\"root\"]/div[2]/div[2]/section/div/form/textarea");
 
     public static final Target PUBLICAR_BUTTON =
             Target.the("Botón publicar comentario")
-                    .located(By.xpath("//button[contains(text(),'Publicar')]"));
-
+                    .locatedBy("//*[@id=\"root\"]/div[2]/div[2]/section/div/form/button");
     public static final Target LISTA_COMENTARIOS =
             Target.the("Lista de comentarios del evento")
-                    .located(By.id("commentsList"));
+                    .locatedBy("//*[@id=\"root\"]/div[2]/div[2]/section/ul");
 
     public static final Target MENSAJE_REQUIERE_LOGIN =
             Target.the("Mensaje de error para usuarios no autenticados")

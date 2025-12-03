@@ -1,8 +1,8 @@
 package co.edu.udea.vivemedellin.screen.questions;
 
-import co.edu.udea.vivemedellin.screen.userinterfaces.EventoPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
+import static co.edu.udea.vivemedellin.screen.userinterfaces.EventoPage.LISTA_COMENTARIOS;
 
 public class ComentarioPublicado implements Question<Boolean> {
 
@@ -18,7 +18,7 @@ public class ComentarioPublicado implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
-        String lista = EventoPage.LISTA_COMENTARIOS.resolveFor(actor).getText();
+        String lista = LISTA_COMENTARIOS.resolveFor(actor).getText();
         return lista.contains(comentario);
     }
 }
