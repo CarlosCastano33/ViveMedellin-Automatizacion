@@ -65,4 +65,19 @@ public class StepDefinition {
     public void respondeComentario(){
         usuario.attemptsTo(Responder.comentario());
     }
+
+    @Given ("que el usuario no está autenticado")
+    public void usuarioNoHaIniciadoSesion(){
+        usuario.attemptsTo(Abrir.viveMedellin());
+    }
+
+    @When ("intenta responder un comentario")
+    public void intentaResponderAComentario(){
+        usuario.attemptsTo(Abrir.evento());
+    }
+
+    @Then ("el sistema rechaza responder"){
+        usuario.should(seeThat(ComentarioRechazado.contiene(), equalTo(true)));
+    }
+    
 }

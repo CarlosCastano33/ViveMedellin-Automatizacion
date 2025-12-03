@@ -13,7 +13,7 @@ Feature: Responder comentarios
         #And la respuesta se muestra inmediatamente en el hilo del comentario
 
     #Scenario: Respuesta sin autentificación
-     #   Given que el usuario no está autenticado
-      #  When intenta responder un comentario
-       # Then se muestra un mensaje indicando que debe iniciar sesión
+        Given que el usuario no está autenticado
+        When intenta responder un comentario
+        Then el sistema rechaza responder
         #And no se permite enviar la respuesta
