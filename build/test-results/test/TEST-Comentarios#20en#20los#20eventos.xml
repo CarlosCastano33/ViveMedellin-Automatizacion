@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Comentarios en los eventos" tests="3" skipped="0" failures="3" errors="0" timestamp="2025-12-03T03:49:40" hostname="DESKTOP-L7TKQKA" time="18.951">
+  <properties/>
+  <testcase name="Usuario autenticado comenta en un evento" classname="Comentarios en los eventos" time="12.967">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#commentTextarea&quot;}&#10;  (Session info: chrome=142.0.7444.176)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.16.1', revision: '9b4c83354e'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [256904a9fc3bfa58018125f0c10f9813, findElement {using=id, value=commentTextarea}]&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\YEISON\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54146}, goog:processID: 12684, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54146/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 256904a9fc3bfa58018125f0c10f9813" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#commentTextarea&quot;}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [256904a9fc3bfa58018125f0c10f9813, findElement {using=id, value=commentTextarea}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\YEISON\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54146}, goog:processID: 12684, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54146/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 256904a9fc3bfa58018125f0c10f9813
+	at java.base@17.0.17/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@17.0.17/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base@17.0.17/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.17/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base@17.0.17/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at app//net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:259)
+	at app//net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:25)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.getResolvedElement(WebElementFacadeImpl.java:188)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:183)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.lambda$type$2(WebElementFacadeImpl.java:745)
+	at app//net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:22)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:744)
+	at app//net.serenitybdd.screenplay.actions.EnterValueIntoTarget.lambda$performAs$0(EnterValueIntoTarget.java:19)
+	at java.base@17.0.17/java.util.Optional.ifPresent(Optional.java:178)
+	at app//net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)
+	at app//net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$wVm9bLHg.performAs$accessor$fnhgwYk2(Unknown Source)
+	at java.base@17.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.17/java.lang.reflect.Method.invoke(Method.java:569)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$wVm9bLHg.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//co.edu.udea.vivemedellin.screen.interactions.EscribirComentario.performAs(EscribirComentario.java:19)
+	at app//co.edu.udea.vivemedellin.screen.interactions.EscribirComentario$ByteBuddy$4IJVcLAU.performAs$accessor$4KIw06Bg(Unknown Source)
+	at java.base@17.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.17/java.lang.reflect.Method.invoke(Method.java:569)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//co.edu.udea.vivemedellin.screen.interactions.EscribirComentario$ByteBuddy$4IJVcLAU.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//co.edu.udea.vivemedellin.screen.stepdefinitions.StepDefinition2.escribeComentario(StepDefinition2.java:46)
+	at ✽.escribe un comentario en el cuadro de texto(file:///C:/Users/YEISON/OneDrive/Escritorio/UdeA%202025-2/CALIDAD%20DE%20SOFTWARE/ViveMedellin-Automatizacion/src/test/resources/features/comentario.feature:6)
+</failure>
+  </testcase>
+  <testcase name="Usuario intenta comentar sin autenticarse" classname="Comentarios en los eventos" time="3.142">
+    <failure message="java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),'Email o contraseña')]&quot;}&#10;  (Session info: chrome=142.0.7444.176)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.16.1', revision: '9b4c83354e'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [256904a9fc3bfa58018125f0c10f9813, findElement {using=xpath, value=//p[contains(text(),'Email o contraseña')]}]&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\YEISON\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54146}, goog:processID: 12684, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54146/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 256904a9fc3bfa58018125f0c10f9813" type="java.lang.AssertionError">java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),'Email o contraseña')]&quot;}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [256904a9fc3bfa58018125f0c10f9813, findElement {using=xpath, value=//p[contains(text(),'Email o contraseña')]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\YEISON\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54146}, goog:processID: 12684, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54146/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 256904a9fc3bfa58018125f0c10f9813
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:397)
+	at co.edu.udea.vivemedellin.screen.stepdefinitions.StepDefinition2.funcionalidadRechazaAccion(StepDefinition2.java:79)
+	at ✽.la funcionalidad de publicación de comentarios rechaza la acción(file:///C:/Users/YEISON/OneDrive/Escritorio/UdeA%202025-2/CALIDAD%20DE%20SOFTWARE/ViveMedellin-Automatizacion/src/test/resources/features/comentario.feature:14)
+</failure>
+  </testcase>
+  <testcase name="Usuario publica comentario con formato enriquecido" classname="Comentarios en los eventos" time="2.842">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#email&quot;}&#10;  (Session info: chrome=142.0.7444.176)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: '4.16.1', revision: '9b4c83354e'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [256904a9fc3bfa58018125f0c10f9813, findElement {using=id, value=email}]&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\YEISON\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54146}, goog:processID: 12684, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54146/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 256904a9fc3bfa58018125f0c10f9813" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#email&quot;}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [256904a9fc3bfa58018125f0c10f9813, findElement {using=id, value=email}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\YEISON\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54146}, goog:processID: 12684, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54146/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 256904a9fc3bfa58018125f0c10f9813
+	at java.base@17.0.17/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@17.0.17/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base@17.0.17/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.17/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base@17.0.17/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at app//net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:259)
+	at app//net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:25)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.getResolvedElement(WebElementFacadeImpl.java:188)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:183)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.lambda$type$2(WebElementFacadeImpl.java:745)
+	at app//net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:22)
+	at app//net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:744)
+	at app//net.serenitybdd.screenplay.actions.EnterValueIntoTarget.lambda$performAs$0(EnterValueIntoTarget.java:19)
+	at java.base@17.0.17/java.util.Optional.ifPresent(Optional.java:178)
+	at app//net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)
+	at app//net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$wVm9bLHg.performAs$accessor$fnhgwYk2(Unknown Source)
+	at java.base@17.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.17/java.lang.reflect.Method.invoke(Method.java:569)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$wVm9bLHg.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//co.edu.udea.vivemedellin.screen.interactions.AccederCon.performAs(AccederCon.java:26)
+	at app//co.edu.udea.vivemedellin.screen.interactions.AccederCon$ByteBuddy$FEvmZuE8.performAs$accessor$HN4fH70W(Unknown Source)
+	at java.base@17.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.17/java.lang.reflect.Method.invoke(Method.java:569)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//co.edu.udea.vivemedellin.screen.interactions.AccederCon$ByteBuddy$FEvmZuE8.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//co.edu.udea.vivemedellin.screen.tasks.IniciarCon.performAs(IniciarCon.java:20)
+	at app//co.edu.udea.vivemedellin.screen.tasks.IniciarCon$ByteBuddy$tVh3KecX.performAs$accessor$xr6ymYQ3(Unknown Source)
+	at java.base@17.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.17/java.lang.reflect.Method.invoke(Method.java:569)
+	at app//net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:524)
+	at app//net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:504)
+	at app//net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:476)
+	at app//net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:218)
+	at app//net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:205)
+	at app//net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at app//net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at app//co.edu.udea.vivemedellin.screen.tasks.IniciarCon$ByteBuddy$tVh3KecX.performAs(Unknown Source)
+	at app//net.serenitybdd.screenplay.Actor.performTask(Actor.java:299)
+	at app//net.serenitybdd.screenplay.Actor.perform(Actor.java:274)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:215)
+	at app//net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:222)
+	at app//co.edu.udea.vivemedellin.screen.stepdefinitions.StepDefinition2.usuarioHaIniciadoSesion(StepDefinition2.java:35)
+	at ✽.que el usuario ha iniciado sesión(file:///C:/Users/YEISON/OneDrive/Escritorio/UdeA%202025-2/CALIDAD%20DE%20SOFTWARE/ViveMedellin-Automatizacion/src/test/resources/features/comentario.feature:18)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Usuario autenticado comenta en un evento(comentarios-en-los-eventos;usuario-autenticado-comenta-en-un-evento)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--start-maximized, --test-type, --no-sandbox, --ignore-certificate-errors, \r\n                   --di..., --disable-default-apps, --disable-extensions-file-a..., \r\n                   --in..., --disable-infobars,--disabl..., --remote-allow-origins=*], extensions: []}}
+dic. 02, 2025 10:49:42 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 142
+dic. 02, 2025 10:49:42 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+ADVERTENCIA: Unable to find version of CDP to use for 142.0.7444.176. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] ERROR  - ?[91m
+  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
+ |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
+   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
+   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+
+Usuario autenticado comenta en un evento
+---------------------------------------------------------------?[0m
+[Test worker] ERROR  - ?[91m    Test failed at step: usuario enters 'Este es un comentario automático' into Área de texto para escribir comentario?[0m
+[Test worker] ERROR  - ?[91m    no such element: Unable to locate element: {"method":"css selector","selector":"#commentTextarea"}?[0m
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Usuario intenta comentar sin autenticarse(comentarios-en-los-eventos;usuario-intenta-comentar-sin-autenticarse)
+--------------------------------------------------------------------------------
+[Test worker] ERROR  - ?[91m
+  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
+ |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
+   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
+   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+
+Usuario intenta comentar sin autenticarse
+---------------------------------------------------------------?[0m
+[Test worker] ERROR  - ?[91m    Test failed at step: Then usuario no autenticado should be 'Debe iniciar sesión para comentar'?[0m
+[Test worker] ERROR  - ?[91m    no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Email o contraseña')]"}?[0m
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Usuario publica comentario con formato enriquecido(comentarios-en-los-eventos;usuario-publica-comentario-con-formato-enriquecido)
+--------------------------------------------------------------------------------
+[Test worker] ERROR  - ?[91m
+  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
+ |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
+   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
+   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+
+Usuario publica comentario con formato enriquecido
+---------------------------------------------------------------?[0m
+[Test worker] ERROR  - ?[91m    Test failed at step: usuario enters 'carlose.castano@udea.edu.co' into Email input?[0m
+[Test worker] ERROR  - ?[91m    no such element: Unable to locate element: {"method":"css selector","selector":"#email"}?[0m
+]]></system-err>
+</testsuite>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Crear comentarios en un evento" skipped="2" tests="3" time="0.23" timestamp="2025-12-02 10:31:02"><testcase name="Usuario autenticado comenta en un evento"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+com.google.common.base.Preconditions.checkNotNull(Preconditions.java:903)&#13;
+co.edu.udea.vivemedellin.screen.stepdefinitions.StepDefinitionComentarios.escribirComentario(StepDefinitionComentarios.java:25)&#13;
+✽.escribe un comentario en el cuadro de texto(file:///C:/Users/YEISON/OneDrive/Escritorio/UdeA%202025-2/CALIDAD%20DE%20SOFTWARE/ViveMedellin-Automatizacion/src/test/resources/features/comentarios.feature:9)&#13;
+</system-err></testcase><testcase name="Usuario intenta comentar sin autenticarse"><skipped/></testcase><testcase name="Usuario publica comentario con formato enriquecido"><skipped/></testcase></testsuite>
