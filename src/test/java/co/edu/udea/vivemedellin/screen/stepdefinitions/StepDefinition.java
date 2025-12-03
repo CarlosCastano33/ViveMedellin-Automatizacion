@@ -1,6 +1,7 @@
 package co.edu.udea.vivemedellin.screen.stepdefinitions;
 
 import co.edu.udea.vivemedellin.screen.questions.UsuarioAutenticado;
+import co.edu.udea.vivemedellin.screen.questions.UsuarioNoAutenticado;
 import co.edu.udea.vivemedellin.screen.tasks.*;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
@@ -13,7 +14,6 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import org.openqa.selenium.WebDriver;
 import static org.hamcrest.Matchers.equalTo;
-import static org.junit.Assert.assertThat;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 
@@ -40,20 +40,19 @@ public class StepDefinition {
 
     @Then("el acceso es concedido y es redirigido a la página principal")
     public void accesoConcedido() {
-//    String obtenido = UsuarioAutenticado.value().answeredBy(usuario);
-  //  System.out.println(obtenido);
-    System.out.println(UsuarioAutenticado.value().answeredBy(usuario));
-    usuario.should(seeThat(UsuarioAutenticado.value(), equalTo("CC")));
-    
-    //assertThat("CC").isEqualTo(UsuarioAutenticado.value());
-}
-
+        System.out.println(UsuarioAutenticado.value().answeredBy(usuario));
+        usuario.should(seeThat(UsuarioAutenticado.value(), equalTo("CC")));
+        usuario.attemptsTo(Cerrar.sesion());
+    }
 
     @When("intenta iniciar sesión con credenciales inválidas")
     public void iniciarSesionConCredencialesInvalidas() {
         usuario.attemptsTo(IniciarCon.credencialesInvalidas());
     }
 
-
+    @Then ("el sistema rechaza el intento de acceso")
+    public void accesoRechazado() {
+        usuario.should(seeThat(UsuarioNoAutenticado.value(), equalTo("Email o contraseña incorrectos")));
+    }
 
 }
