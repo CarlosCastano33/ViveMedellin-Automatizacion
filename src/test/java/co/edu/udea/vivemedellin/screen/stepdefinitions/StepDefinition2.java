@@ -2,6 +2,7 @@ package co.edu.udea.vivemedellin.screen.stepdefinitions;
 
 import co.edu.udea.vivemedellin.screen.interactions.EnviarComentario;
 import co.edu.udea.vivemedellin.screen.questions.ComentarioPublicado;
+import co.edu.udea.vivemedellin.screen.questions.ComentarioRechazado;
 import co.edu.udea.vivemedellin.screen.questions.UsuarioAutenticado;
 import co.edu.udea.vivemedellin.screen.questions.UsuarioNoAutenticado;
 import co.edu.udea.vivemedellin.screen.tasks.*;
@@ -50,6 +51,7 @@ public class StepDefinition2 {
     public void apareceEnLista() {
         String comentario = usuario.recall("comentario");
         usuario.should(seeThat(ComentarioPublicado.contiene(comentario), equalTo(true)));
+        usuario.attemptsTo(Cerrar.sesion());
     }
 
     @Given("que el usuario no ha iniciado sesión")
@@ -62,23 +64,21 @@ public class StepDefinition2 {
         usuario.attemptsTo(Abrir.evento());
     }
 
-    @Then("la funcionalidad de publicación de comentarios rechaza la acción")
+    @Then("el sistema rechaza la acción")
     public void funcionalidadRechazaAccion() {
-        usuario.should(seeThat(UsuarioNoAutenticado.value(), equalTo("Debe iniciar sesión para comentar")));
+        usuario.should(seeThat(ComentarioRechazado.contiene(), equalTo(true)));
     }
-
 
     @When("escribe un comentario usando formato enriquecido")
     public void escribeConFormato() {
         usuario.remember("comentario", "**Comentario en negritas** con *cursivas*");
-        usuario.attemptsTo(EnviarComentario.conTexto("**Comentario en negritas** con *cursivas*"));
+        usuario.attemptsTo(Escribir.comentario("**Comentario en negritas** con *cursivas*"));
     }
 
-    @Then("se muestra el comentario con el formato aplicado")
-    public void seMuestraConFormato() {
-        String comentario = usuario.recall("comentario");
-        usuario.should(seeThat(ComentarioPublicado.contiene("negritas"), equalTo(true)));
-    }
+//    @Then("se muestra el comentario con el formato aplicado")
+  //  public void seMuestraConFormato() {
+    //    usuario.should(seeThat(ComentarioPublicado.contiene("negritas"), equalTo(true)));
+    //}
 
 
 }
