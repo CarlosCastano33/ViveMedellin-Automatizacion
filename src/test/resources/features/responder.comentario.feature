@@ -8,7 +8,7 @@ Feature: Responder comentarios
         Given que el usuario está en la pantalla de inicio de sesión
             #Given que el usuario está autenticado en la plataforma
         And se encuentra visualizando un comentario en un evento
-        When escribe una respuesta y envía el mensaje
+        When escribe una respuesta a un comentario y envía el mensaje
         Then la respuesta queda anidada al comentario original
         And la respuesta se muestra inmediatamente en el hilo del comentario
 

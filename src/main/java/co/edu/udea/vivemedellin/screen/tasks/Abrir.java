@@ -22,4 +22,8 @@ public class Abrir implements Task {
         return Tasks.instrumented(Abrir.class, "https://frontend-vivamedellin.vercel.app/");
     }
 
+    public static Abrir evento(){
+        return Tasks.instrumented(Abrir.class, "https://frontend-vivamedellin.vercel.app/event-01");
+    }
+
 }

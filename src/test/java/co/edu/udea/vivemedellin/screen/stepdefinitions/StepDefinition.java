@@ -4,6 +4,7 @@ import co.edu.udea.vivemedellin.screen.questions.UsuarioAutenticado;
 import co.edu.udea.vivemedellin.screen.questions.UsuarioNoAutenticado;
 import co.edu.udea.vivemedellin.screen.tasks.*;
 import io.cucumber.java.Before;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -55,4 +56,13 @@ public class StepDefinition {
         usuario.should(seeThat(UsuarioNoAutenticado.value(), equalTo("Email o contraseña incorrectos")));
     }
 
+    @And ("se encuentra visualizando un comentario en un evento")
+    public void abrirEvento(){
+        usuario.attemptsTo(Abrir.evento());
+    }
+
+    @When ("escribe una respuesta a un comentario y envía el mensaje")
+    public void respondeComentario(){
+        usuario.attemptsTo(Responder.comentario());
+    }
 }
